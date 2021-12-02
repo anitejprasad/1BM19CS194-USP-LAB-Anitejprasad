@@ -1,4 +1,3 @@
-#!/bin/bash
 echo "Enter the Temperature in Fahrenheit"
 read tf
 tc1=`expr $tf - 32`
