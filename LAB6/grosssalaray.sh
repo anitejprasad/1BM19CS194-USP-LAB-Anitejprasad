@@ -1,11 +1,6 @@
-echo “Basic salary”
-
-read basic
-
-expr ‘$da=$basic\*10/100’
-
-expr ‘$hra=$basic\*20/100’
-
-expr ‘$gross=$basic+$da+$hra’
-
-echo “Gross salary = $gross”
+echo "Enter the Basic Salary"
+read bs
+da=`expr $bs / 10`
+hra=`expr $bs / 5`
+gs=`expr $bs + $hra + $da`
+echo "The Gross Salary is : $gs"
